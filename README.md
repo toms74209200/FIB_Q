@@ -7,16 +7,16 @@ Interface is Avalon-ST.
 
 ## Interface
 
-| Name      | Width | I/O  | P/N  | Description                             |
-| --------- | ----- | ---- | ---- | --------------------------------------- |
-| RESET_n   | 1     | I    | N    | Reset                                   |
-| CLK       | 1     | I    | P    | Clock                                   |
-| ASI_READY | 1     | O    | P    | Avalon-ST sink data ready               |
-| ASI_VALID | 1     | I    | P    | Avalon-ST sink data valid               |
-| ASI_DATA  | 64:0  | I    | P    | Avalon-ST sink data: index n            |
-| ASO_VALID | 1     | O    | P    | Avalon-ST source data valid             |
-| ASO_DATA  | 64:0  | O    | P    | Avalon-ST source data: Fibonacci number |
-| ASO_ERROR | 1     | O    | P    | Avalon-ST source error                  |
+| Name           | I/O  | P/N  | Description                             |
+| -------------- | ---- | ---- | --------------------------------------- |
+| RESET_n        | I    | N    | Reset                                   |
+| CLK            | I    | P    | Clock                                   |
+| ASI_READY      | O    | P    | Avalon-ST sink data ready               |
+| ASI_VALID      | I    | P    | Avalon-ST sink data valid               |
+| ASI_DATA[63:0] | I    | P    | Avalon-ST sink data: index n            |
+| ASO_VALID      | O    | P    | Avalon-ST source data valid             |
+| ASO_DATA[63:0] | O    | P    | Avalon-ST source data: Fibonacci number |
+| ASO_ERROR      | O    | P    | Avalon-ST source error                  |
 
 Data width is parameterized with DW.
 
